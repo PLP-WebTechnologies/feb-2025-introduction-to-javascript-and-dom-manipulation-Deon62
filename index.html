@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            transition: background-color 0.5s;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .button-container {
+            margin: 20px 0;
+        }
+        
+        button {
+            padding: 10px 15px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .primary-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        .secondary-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .danger-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        #dynamic-text {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .highlighted {
+            background-color: yellow;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #666;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>JavaScript DOM Manipulation Demo</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Dynamic Text Manipulation</h2>
+            <p id="dynamic-text">This text will change when you click the button below.</p>
+            <div class="button-container">
+                <button id="change-text-btn" class="primary-btn">Change Text</button>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Style Manipulation</h2>
+            <p>Click the button below to change the page style:</p>
+            <div class="button-container">
+                <button id="change-style-btn" class="secondary-btn">Toggle Dark Mode</button>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Element Addition & Removal</h2>
+            <div id="element-container">
+                <!-- Dynamic elements will appear here -->
+            </div>
+            <div class="button-container">
+                <button id="add-element-btn" class="primary-btn">Add Element</button>
+                <button id="remove-element-btn" class="danger-btn">Remove Element</button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Created for JavaScript DOM Manipulation Assignment</p>
+    </footer>
+    
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
